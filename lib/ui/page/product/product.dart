@@ -7,9 +7,9 @@ class JKBProductPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("保险产品"),
+        title: Text("保险"),
       ),
-      body: Text("保险产品"),
+      body: Text("保险"),
     );
   }
 }

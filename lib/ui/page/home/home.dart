@@ -13,10 +13,11 @@ class JKBHomePage extends StatefulWidget {
 }
 
 class _JKBHomePageState extends State<JKBHomePage> {
-  late JKBHomeModel _homeModel;
+  JKBHomeModel? _homeModel;
 
   @override
-  Widget build(BuildContext context) {
+  void initState() {
+    super.initState();
 
     //获取首页json数据
     JKBHomeJsonParse.getHomeData().then((value) {
@@ -24,12 +25,18 @@ class _JKBHomePageState extends State<JKBHomePage> {
         _homeModel = value;
       });
     });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    //数据为空保护
+    final String title = _homeModel?.title ?? "";
 
     return Scaffold(
       appBar: AppBar(
         title: Text("首页"),
       ),
-      body: Text(_homeModel.title!),
+      body: Text(title),
     );
   }
 }

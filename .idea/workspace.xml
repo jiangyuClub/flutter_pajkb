@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a2e9fb6-e778-4c1d-9093-3dc20b90db87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/jsons/home.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ui/page/home/model/home_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/page/home/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/page/home/home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/page/root/root.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/page/root/root.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/page/product/product.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/page/product/product.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
