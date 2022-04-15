@@ -3,6 +3,9 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_pajkb/ui/page/root/initialize_items.dart';
 
+/**
+ * 跟组件，承载barbar
+ * */
 class JKBRootPage extends StatefulWidget {
   static const String routeName = "/";
 
