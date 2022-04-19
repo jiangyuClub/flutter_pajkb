@@ -4,6 +4,9 @@
 
 import 'dart:convert';
 
+import 'package:flutter_pajkb/core/model/floor/floor_base_model.dart';
+import 'package:flutter_pajkb/core/model/floor/floor_header_model.dart';
+
 /**
  * 网格楼层采用自动生成model，做容错修改
  * from：https://app.quicktype.io
@@ -12,14 +15,15 @@ JKBFloorGridModel fromJson(String str) => JKBFloorGridModel.fromJson(json.decode
 
 String toJson(JKBFloorGridModel data) => json.encode(data.toJson());
 
-class JKBFloorGridModel {
+class JKBFloorGridModel extends JKBFloorBaseModel {
   JKBFloorGridModel({
     this.dataResponse,
-    this.templateId,
-  });
+    int? templateId,
+    int? index,
+    JKBFloorHeaderModel? headerResponse,
+  }): super(templateId, index, headerResponse);
 
   DataResponse? dataResponse;
-  int? templateId;
 
   factory JKBFloorGridModel.fromJson(Map<String, dynamic> json) => JKBFloorGridModel(
     dataResponse: DataResponse.fromJson(json["dataResponse"]),

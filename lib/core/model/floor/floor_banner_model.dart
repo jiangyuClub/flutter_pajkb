@@ -1,22 +1,27 @@
+import 'package:flutter_pajkb/core/model/floor/floor_base_model.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_header_model.dart';
 
 /**
  * banner楼层自己写的解析model
  * */
-class JKBFloorBannerModel {
-  late int templateId;
-  int? index;
-  JKBFloorHeaderModel? headerResponse;
+class JKBFloorBannerModel extends JKBFloorBaseModel {
 
-  late JKBFloorResponseModel dataResponse;
+  late JKBFloorResponseModel? dataResponse;
 
-  JKBFloorBannerModel.fromJson(Map<String, dynamic> json) {
-    templateId = json['templateId'];
-    index = json['index'];
-    if (json['headerResponse'] != null) {
-      headerResponse = JKBFloorHeaderModel.fromJson(json['headerResponse']);
-    }
-    dataResponse = JKBFloorResponseModel.fromJson(json['dataResponse']);
+  JKBFloorBannerModel({
+    this.dataResponse,
+    int? templateId,
+    int? index,
+    JKBFloorHeaderModel? headerResponse,
+  }): super(templateId, index, headerResponse);
+
+  factory JKBFloorBannerModel.fromJson(Map<String, dynamic> json) {
+    return JKBFloorBannerModel(
+      templateId: json['templateId'],
+      index: json['index'],
+      headerResponse: json['headerResponse'] == Null ? JKBFloorHeaderModel.fromJson(json['headerResponse']) : null,
+      dataResponse: JKBFloorResponseModel.fromJson(json['dataResponse']),
+    );
   }
 }
 

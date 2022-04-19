@@ -10,10 +10,12 @@ class JKBFloorHeaderModel {
 
   JKBFloorHeaderModel({this.floorTitle, this.floorBackImage, this.floorBackColor, this.midlineColor});
 
-  JKBFloorHeaderModel.fromJson(Map<String, dynamic> json) {
-    floorTitle = json['floorTitle'];
-    floorBackImage = json['floorBackImage'];
-    floorBackColor = json['floorBackColor'];
-    midlineColor = json['midlineColor'];
+  factory JKBFloorHeaderModel.fromJson(Map<String, dynamic> json) {
+    return JKBFloorHeaderModel(
+      floorTitle: json['floorTitle'],
+      floorBackImage: json['floorBackImage'],
+      floorBackColor: json['floorBackColor'],
+      midlineColor: json['midlineColor'],
+    );
   }
 }
