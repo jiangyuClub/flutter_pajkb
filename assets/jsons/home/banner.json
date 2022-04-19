@@ -1,0 +1,18 @@
+{
+  "dataResponse": {
+    "floorBackImage": "",
+    "floorBackColor": "",
+    "bannerModelList": [
+      {
+        "imgUrl": "https://stg.iobs.pingan.com.cn/download/bd-user-op-sf-stg/mtpM6jE5",
+        "router": "testjiang"
+      },
+      {
+        "imgUrl": "https://stg.iobs.pingan.com.cn/download/bd-user-op-sf-stg/mtpM6jE5",
+        "router": "testjiang"
+      }
+    ]
+  },
+  "headerResponse": null,
+  "templateId": 3
+}
