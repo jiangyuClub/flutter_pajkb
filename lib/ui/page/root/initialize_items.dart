@@ -17,27 +17,27 @@ final List<Widget> pages = [
 final List<BottomNavigationBarItem> items = [
   BottomNavigationBarItem(
       label: "首页",
-      icon: Image.asset("assets/images/tabbar/tab_button_shouye_normal@2x.png", width: 20.px,),
-      activeIcon: Image.asset("assets/images/tabbar/tab_button_shouye_press@2x.png", width: 20.px,)
+      icon: Image.asset("assets/images/tabbar/tab_button_shouye_normal@2x.png", width: 30.px,),
+      activeIcon: Image.asset("assets/images/tabbar/tab_button_shouye_press@2x.png", width: 30.px,)
   ),
   BottomNavigationBarItem(
       label: "保险",
-      icon: Image.asset("assets/images/tabbar/tab_button_baoxian_normal@2x.png", width: 20.px,),
-      activeIcon: Image.asset("assets/images/tabbar/tab_button_baoxian_press@2x.png", width: 20.px,)
+      icon: Image.asset("assets/images/tabbar/tab_button_baoxian_normal@2x.png", width: 30.px,),
+      activeIcon: Image.asset("assets/images/tabbar/tab_button_baoxian_press@2x.png", width: 30.px,)
   ),
   BottomNavigationBarItem(
       label: "健康",
-      icon: Image.asset("assets/images/tabbar/tab_button_jiankang_normal@2x.png", width: 20.px,),
-      activeIcon: Image.asset("assets/images/tabbar/tab_button_jiankang_press@2x.png", width: 20.px,)
+      icon: Image.asset("assets/images/tabbar/tab_button_jiankang_normal@2x.png", width: 30.px,),
+      activeIcon: Image.asset("assets/images/tabbar/tab_button_jiankang_press@2x.png", width: 30.px,)
   ),
   BottomNavigationBarItem(
       label: "专家",
-      icon: Image.asset("assets/images/tabbar/tab_button_jiuyi_normal@2x.png", width: 20.px,),
-      activeIcon: Image.asset("assets/images/tabbar/tab_button_jiuyi_press@2x.png", width: 20.px,)
+      icon: Image.asset("assets/images/tabbar/tab_button_expert_normal@2x.png", width: 30.px,),
+      activeIcon: Image.asset("assets/images/tabbar/tab_button_expert_press@2x.png", width: 30.px,)
   ),
   BottomNavigationBarItem(
       label: "我的",
-      icon: Image.asset("assets/images/tabbar/tab_button_wode_normal@2x.png", width: 20.px,),
-      activeIcon: Image.asset("assets/images/tabbar/tab_button_wode_press@2x.png", width: 20.px,)
+      icon: Image.asset("assets/images/tabbar/tab_button_wode_normal@2x.png", width: 30.px,),
+      activeIcon: Image.asset("assets/images/tabbar/tab_button_wode_press@2x.png", width: 30.px,)
   )
 ];

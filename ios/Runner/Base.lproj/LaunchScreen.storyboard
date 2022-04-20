@@ -19,18 +19,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="YRO-k0-Ey4">
-                                <rect key="frame" x="147" y="388" width="120" height="120"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" semanticContentAttribute="forceRightToLeft" misplaced="YES" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="YRO-k0-Ey4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="Tuz-vl-aJd"/>
-                                    <constraint firstAttribute="width" constant="120" id="rVo-KP-Bp7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="BNC-AK-eX5"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="q64-d3-sLs"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YRO-k0-Ey4" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1a2-6s-vTC"/>
-                            <constraint firstItem="YRO-k0-Ey4" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4X2-HB-R7a"/>
+                            <constraint firstItem="YRO-k0-Ey4" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="ReL-ip-TS0"/>
+                            <constraint firstItem="YRO-k0-Ey4" firstAttribute="bottom" secondItem="xbc-2k-c8Z" secondAttribute="top" id="VZS-Jm-kMh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YRO-k0-Ey4" secondAttribute="trailing" id="dHr-O4-R5q"/>
+                            <constraint firstItem="YRO-k0-Ey4" firstAttribute="top" secondItem="Ydg-fD-yQy" secondAttribute="bottom" id="scg-Qc-ca9"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,6 +43,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchImage" width="60" height="60"/>
+        <image name="LaunchImage" width="131.5" height="269.5"/>
     </resources>
 </document>
