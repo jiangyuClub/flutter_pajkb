@@ -26,6 +26,7 @@ class JKBFloorGrid extends StatelessWidget {
           itemCount: _grids.length,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 4,
+              mainAxisExtent: 80.px
           ),
           itemBuilder: (ctx, index) {
             return buildGridItem(_grids[index]);
@@ -36,13 +37,12 @@ class JKBFloorGrid extends StatelessWidget {
 
   Widget buildGridItem(FastModelList item) {
     return Container(
-      width: 60.px,
-      height: 55.px,
+//      color: Colors.red,
       child: Column(
         children: [
           ClipRRect(
               borderRadius: BorderRadius.circular(20.px),
-              child: Image.network(item.imgUrl!, fit: BoxFit.cover, width: 40.px, height: 38.px,)
+              child: Image.network(item.imgUrl!, fit: BoxFit.cover, width: 40.px, height: 40.px,)
           ),
           Text(item.mainTitle!, style: TextStyle(fontSize: JKBAppTheme.bodyFontSize),)
         ],
