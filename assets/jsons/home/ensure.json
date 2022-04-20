@@ -1,0 +1,15 @@
+{
+  "dataResponse": {
+    "ensureModelList": [
+      {
+        "memberGradeName": "健康会员",
+        "subTitle": "健康保障会员"
+      },
+      {
+        "memberGradeName": "健康会员",
+        "subTitle": "健康保障会员"
+      }
+    ]
+  },
+  "templateId": 15
+}

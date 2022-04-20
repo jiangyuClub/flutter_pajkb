@@ -18,9 +18,9 @@ class JKBFloorBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 100.px,
-      padding: EdgeInsets.only(left: 15.px, right: 15.px),
+      padding: EdgeInsets.only(left: 15.px, right: 15.px, top: 10.px),
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(12.px),
+        borderRadius: BorderRadius.circular(8.px),
         child: Swiper(
           autoplay: true,
           itemCount: banners.length,

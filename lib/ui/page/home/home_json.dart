@@ -2,6 +2,8 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_banner_model.dart';
+import 'package:flutter_pajkb/core/model/floor/floor_base_model.dart';
+import 'package:flutter_pajkb/core/model/floor/floor_ensure_model.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_grid_model.dart';
 
 /**
@@ -10,8 +12,8 @@ import 'package:flutter_pajkb/core/model/floor/floor_grid_model.dart';
 class JKBHomeJsonParse {
 
   //获取首页分类数据
-  static Future<List> getHomeData() async {
-    List resList = [];
+  static Future<List<JKBFloorBaseModel>> getHomeData() async {
+    List<JKBFloorBaseModel> resList = [];
 
     //1、banner解析
     final bannerModel = await JKBHomeJsonParse.getFloorModel(url: "assets/jsons/home/banner.json", serializeFun: (json) {
@@ -25,10 +27,19 @@ class JKBHomeJsonParse {
     });
     resList.add(gridModel);
 
+    //3、左右两标题
+    final ensureModel = await JKBHomeJsonParse.getFloorModel(url: "assets/jsons/home/ensure.json", serializeFun: (json) {
+      return JKBFloorEnsureModel.fromJson(json);
+    });
+    resList.add(ensureModel);
 
+
+    print("testjiang==${resList.length}");
 
     return resList;
   }
+
+
 
   /**
    * 楼层model解析，支持所有楼层解析

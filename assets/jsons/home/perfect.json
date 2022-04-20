@@ -1,0 +1,47 @@
+{
+  "dataResponse": {
+    "classifyList": [
+      {
+        "classifyName": "先保自己",
+        "bigImgResponse": {
+          "subTitle": "先保自己，e生保2020",
+          "imgUrl": "https://stg.iobs.pingan.com.cn/download/bd-user-op-sf-stg/TxXlMwcG",
+          "buttonText": "立即补充",
+          "mainTitle": "频道页迁移~",
+          "number": "200",
+          "iconUrl": "https://stg.iobs.pingan.com.cn/download/bd-user-op-sf-stg/pZqScVa5",
+          "tag": "标签"
+        },
+        "littleImgList": [
+          {
+            "subTitle": "平安i康保·综合意外",
+            "buttonText": "立即补充",
+            "mainTitle": "意外保障缺失",
+            "number": "144",
+            "iconUrl": "https://stg.iobs.pingan.com.cn/download/bd-user-op-sf-stg/JNC4jwEI",
+            "loginCondition": 0,
+            "tag": "标签"
+          },
+          {
+            "subTitle": "平安i康保·综合意外",
+            "buttonText": "立即补充",
+            "mainTitle": "意外保障缺失",
+            "tag": "最高50万 | 加班猝死可保",
+            "number": "144",
+            "iconUrl": "https://stg.iobs.pingan.com.cn/download/bd-user-op-sf-stg/JNC4jwEI"
+          }
+        ]
+      },
+      {
+        "classifyName": "疼爱配偶"
+      },
+      {
+        "classifyName": "孝顺父母"
+      },
+      {
+        "classifyName": "测试分类"
+      }
+    ]
+  },
+  "templateId": 5
+}

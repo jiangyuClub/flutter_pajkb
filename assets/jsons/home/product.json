@@ -1,0 +1,31 @@
+{
+  "dataResponse": {
+    "classifyList": [
+      {
+        "classifyName": "全家福",
+        "backImgUrl": "https://stg.iobs.pingan.com.cn/download/bd-user-op-sf-stg/WvOPwlxx"
+      },
+      {
+        "classifyName": "医疗险",
+        "backImgUrl": "https://stg.iobs.pingan.com.cn/download/bd-user-op-sf-stg/6kASOXb5"
+      },
+      {
+        "classifyName": "百万医疗",
+        "backImgUrl": "https://stg.iobs.pingan.com.cn/download/bd-user-op-sf-stg/6kASOXb5"
+      },
+      {
+        "classifyName": "需求分析",
+        "backImgUrl": "https://stg.iobs.pingan.com.cn/download/bd-user-op-sf-stg/6kASOXb5"
+      },
+      {
+        "classifyName": "重疾推荐",
+        "backImgUrl": "https://stg.iobs.pingan.com.cn/download/bd-user-op-sf-stg/6kASOXb5"
+      },
+      {
+        "classifyName": "综合意外",
+        "backImgUrl": "https://stg.iobs.pingan.com.cn/download/bd-user-op-sf-stg/6kASOXb5"
+      }
+    ]
+  },
+  "templateId": 16
+}

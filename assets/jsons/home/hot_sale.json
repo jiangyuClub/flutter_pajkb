@@ -1,0 +1,51 @@
+{
+  "dataResponse": {
+    "classifyList": [
+      {
+        "classifyName": "推荐保障",
+        "mainTitle": "高额意外保障，覆盖出行意外风险，意外伤残赔付医疗费，意外住院有津贴",
+        "imgUrl": "https://stg.iobs.pingan.com.cn/download/pah-app-newadmin-sf-stg/1bRbHngN",
+        "title": "少儿意外险",
+        "subTitle": "少儿意外险副标题",
+        "number": 48,
+        "unit": "元/年起",
+        "recommondTitle": "推荐标题",
+        "recommondContent": "推荐内容"
+      },
+      {
+        "classifyName": "重疾险",
+        "mainTitle": "高额意外保障，覆盖出行意外风险，意外伤残赔付医疗费，意外住院有津贴",
+        "imgUrl": "https://stg.iobs.pingan.com.cn/download/pah-app-newadmin-sf-stg/1bRbHngN",
+        "title": "少儿意外险",
+        "subTitle": "少儿意外险副标题",
+        "number": 48,
+        "unit": "元/年起",
+        "recommondTitle": "推荐标题",
+        "recommondContent": "推荐内容"
+      },
+      {
+        "classifyName": "意外险",
+        "mainTitle": "高额意外保障，覆盖出行意外风险，意外伤残赔付医疗费，意外住院有津贴",
+        "imgUrl": "https://stg.iobs.pingan.com.cn/download/pah-app-newadmin-sf-stg/1bRbHngN",
+        "title": "少儿意外险",
+        "subTitle": "少儿意外险副标题",
+        "number": 48,
+        "unit": "元/年起",
+        "recommondTitle": "推荐标题",
+        "recommondContent": "推荐内容"
+      },
+      {
+        "classifyName": "医疗险",
+        "mainTitle": "高额意外保障，覆盖出行意外风险，意外伤残赔付医疗费，意外住院有津贴",
+        "imgUrl": "https://stg.iobs.pingan.com.cn/download/pah-app-newadmin-sf-stg/1bRbHngN",
+        "title": "少儿意外险",
+        "subTitle": "少儿意外险副标题",
+        "number": 48,
+        "unit": "元/年起",
+        "recommondTitle": "推荐标题",
+        "recommondContent": "推荐内容"
+      }
+    ]
+  },
+  "templateId": 6
+}

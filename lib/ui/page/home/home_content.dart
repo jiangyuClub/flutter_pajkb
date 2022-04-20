@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_banner_model.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_base_model.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_config.dart';
+import 'package:flutter_pajkb/core/model/floor/floor_ensure_model.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_grid_model.dart';
-import 'package:flutter_pajkb/ui/widget/floor_banner.dart';
-import 'package:flutter_pajkb/ui/widget/floor_grid.dart';
+import 'package:flutter_pajkb/ui/widget/floor/floor_banner.dart';
+import 'package:flutter_pajkb/ui/widget/floor/floor_ensure.dart';
+import 'package:flutter_pajkb/ui/widget/floor/floor_grid.dart';
 
 class JKBHomeContent extends StatelessWidget {
   List _floorModels = [];
@@ -41,6 +43,12 @@ class JKBHomeContent extends StatelessWidget {
         floor = JKBFloorGrid(grids);
       }
         break;
+      case JKBFloorConfig.ensureId:{
+        JKBFloorEnsureModel ensureModel = floorModel as JKBFloorEnsureModel;
+        List<EnsureModelList> ensures = ensureModel.dataResponse!.ensureModelList as List<EnsureModelList>;
+        floor = JKBFloorEnsure(ensures);
+      }
+      break;
     }
     return floor!=null ? floor : Text("未知楼层");
   }
