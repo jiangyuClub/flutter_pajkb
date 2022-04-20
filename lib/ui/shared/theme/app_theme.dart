@@ -16,7 +16,7 @@ class JKBAppTheme {
     //主题色
     primarySwatch: Colors.orange,
     //背景色
-    canvasColor: Colors.white,
+    canvasColor: Color(0xFFF6F8FA),
     textTheme: TextTheme(
       bodyText1: TextStyle(fontSize: bodyFontSize),
     )
