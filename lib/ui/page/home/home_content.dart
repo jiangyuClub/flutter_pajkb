@@ -4,11 +4,14 @@ import 'package:flutter_pajkb/core/model/floor/floor_base_model.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_config.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_ensure_model.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_grid_model.dart';
+import 'package:flutter_pajkb/core/model/floor/floor_hotsale_model.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_perfect_model.dart';
 import 'package:flutter_pajkb/ui/widget/floor/floor_banner.dart';
 import 'package:flutter_pajkb/ui/widget/floor/floor_ensure.dart';
 import 'package:flutter_pajkb/ui/widget/floor/floor_grid.dart';
+import 'package:flutter_pajkb/ui/widget/floor/hotsale/floor_hotsale.dart';
 import 'package:flutter_pajkb/ui/widget/floor/perfect/floor_perfect.dart';
+import 'package:flutter_pajkb/ui/shared/size_fit/int_extension.dart';
 
 class JKBHomeContent extends StatelessWidget {
   List _floorModels = [];
@@ -18,6 +21,7 @@ class JKBHomeContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+        padding: EdgeInsets.only(bottom: 15.px),
         itemCount: _floorModels.length,
         itemBuilder: (BuildContext context, int index) {
         return getFloor(index);
@@ -55,6 +59,12 @@ class JKBHomeContent extends StatelessWidget {
         JKBFloorPerfectModel perfectModel = floorModel as JKBFloorPerfectModel;
         List<ClassifyList> perfects = perfectModel.dataResponse!.classifyList as List<ClassifyList>;
         floor = JKBFloorPerfect(perfects, perfectModel.headerResponse);
+      }
+      break;
+      case JKBFloorConfig.hotSaleId:{
+        JKBFloorHotSaleModel hotSaleModel = floorModel as JKBFloorHotSaleModel;
+        List<HotSaleList> hotSales = hotSaleModel.dataResponse!.hotSaleList as List<HotSaleList>;
+        floor = JKBFloorHotSale(hotSales, hotSaleModel.headerResponse);
       }
       break;
     }

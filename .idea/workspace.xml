@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a2e9fb6-e778-4c1d-9093-3dc20b90db87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/ui/widget/floor/perfect/floor_perfect_smallcard.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/core/model/floor/floor_hotsale_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/widget/floor/hotsale/floor_hotsale.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/widget/floor/hotsale/floor_hotsale_product.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/jsons/home/perfect.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/jsons/home/perfect.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/model/floor/floor_config.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/model/floor/floor_config.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/jsons/home/hot_sale.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/jsons/home/hot_sale.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/jsons/home/product.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/jsons/home/product.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/page/home/home_content.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/page/home/home_content.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/page/home/home_json.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/page/home/home_json.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/widget/floor/floor_ensure.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/widget/floor/floor_ensure.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/widget/floor/perfect/floor_perfect.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/widget/floor/perfect/floor_perfect.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -14,8 +14,7 @@ import 'package:flutter_pajkb/ui/widget/floor/perfect/floor_perfect_smallcard.da
 class JKBFloorPerfect extends StatefulWidget {
   List<ClassifyList> _perfects = [];
   JKBFloorHeaderModel? _headerModel;
-
-  int sliderIndex = 0;
+  int _sliderIndex = 0;
 
   JKBFloorPerfect(this._perfects, this._headerModel);
 
@@ -44,7 +43,7 @@ class _JKBFloorPerfectState extends State<JKBFloorPerfect> {
     children.add(buildSlider(widget._perfects));
 
     //大卡片
-    ClassifyList currentModel = widget._perfects[widget.sliderIndex];
+    ClassifyList currentModel = widget._perfects[widget._sliderIndex];
     children.add(JKBFloorPerfectBigCard(currentModel.bigImgResponse!));
 
     //小卡片
@@ -68,8 +67,8 @@ class _JKBFloorPerfectState extends State<JKBFloorPerfect> {
   //2、创建滑块
   Widget buildSlider(List<ClassifyList> perfects) {
     return Container(
-      height: 50.px,
-      padding: EdgeInsets.only(top: 8.px),
+      height: 45.px,
+      padding: EdgeInsets.only(top: 8.px, bottom: 5.px),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: getSliderItems(perfects),
@@ -80,7 +79,7 @@ class _JKBFloorPerfectState extends State<JKBFloorPerfect> {
   List<Widget> getSliderItems(List<ClassifyList> perfects) {
     List<Widget> items = [];
     for (int i = 0; i<perfects.length; i++) {
-      Color titleColor = widget.sliderIndex == i ? Colors.black : Colors.grey;
+      Color titleColor = widget._sliderIndex == i ? Colors.black : Colors.grey;
       //每个滑块
       ClassifyList perfect = perfects[i];
       Widget slider = GestureDetector(
@@ -88,12 +87,12 @@ class _JKBFloorPerfectState extends State<JKBFloorPerfect> {
           children: [
             Text(perfect.classifyName!, style: TextStyle(fontSize: JKBAppTheme.smallFontSize, color: titleColor),),
             SizedBox(height: 5.px,),
-            widget.sliderIndex == i ? Container(width: 20.px, height: 3.px, color: Colors.green,) : Text("")
+            widget._sliderIndex == i ? Container(width: 20.px, height: 3.px, color: Colors.green,) : SizedBox(height: 3.px,)
           ],
         ),
         onTap: () {
           setState(() {
-            widget.sliderIndex = i;
+            widget._sliderIndex = i;
           });
         },
       );
