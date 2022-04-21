@@ -5,6 +5,7 @@ import 'package:flutter_pajkb/core/model/floor/floor_banner_model.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_base_model.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_ensure_model.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_grid_model.dart';
+import 'package:flutter_pajkb/core/model/floor/floor_perfect_model.dart';
 
 /**
  * 首页json解析类
@@ -32,6 +33,12 @@ class JKBHomeJsonParse {
       return JKBFloorEnsureModel.fromJson(json);
     });
     resList.add(ensureModel);
+
+    //4、完善保障
+    final perfectModel = await JKBHomeJsonParse.getFloorModel(url: "assets/jsons/home/perfect.json", serializeFun: (json) {
+      return JKBFloorPerfectModel.fromJson(json);
+    });
+    resList.add(perfectModel);
 
 
     print("testjiang==${resList.length}");

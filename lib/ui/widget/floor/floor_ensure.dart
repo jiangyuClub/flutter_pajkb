@@ -7,6 +7,9 @@ import 'package:flutter_pajkb/ui/shared/size_fit/size_fit.dart';
 import 'package:flutter_pajkb/ui/shared/theme/app_theme.dart';
 import 'package:flutter_pajkb/ui/widget/floor/floor_bound_card.dart';
 
+/**
+ * 左右标题楼层
+ * */
 class JKBFloorEnsure extends StatelessWidget {
   List<EnsureModelList> _ensures = [];
 

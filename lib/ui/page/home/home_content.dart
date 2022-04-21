@@ -4,9 +4,11 @@ import 'package:flutter_pajkb/core/model/floor/floor_base_model.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_config.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_ensure_model.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_grid_model.dart';
+import 'package:flutter_pajkb/core/model/floor/floor_perfect_model.dart';
 import 'package:flutter_pajkb/ui/widget/floor/floor_banner.dart';
 import 'package:flutter_pajkb/ui/widget/floor/floor_ensure.dart';
 import 'package:flutter_pajkb/ui/widget/floor/floor_grid.dart';
+import 'package:flutter_pajkb/ui/widget/floor/perfect/floor_perfect.dart';
 
 class JKBHomeContent extends StatelessWidget {
   List _floorModels = [];
@@ -47,6 +49,12 @@ class JKBHomeContent extends StatelessWidget {
         JKBFloorEnsureModel ensureModel = floorModel as JKBFloorEnsureModel;
         List<EnsureModelList> ensures = ensureModel.dataResponse!.ensureModelList as List<EnsureModelList>;
         floor = JKBFloorEnsure(ensures);
+      }
+      break;
+      case JKBFloorConfig.perfectId:{
+        JKBFloorPerfectModel perfectModel = floorModel as JKBFloorPerfectModel;
+        List<ClassifyList> perfects = perfectModel.dataResponse!.classifyList as List<ClassifyList>;
+        floor = JKBFloorPerfect(perfects, perfectModel.headerResponse);
       }
       break;
     }
