@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_grid_model.dart';
 import 'package:flutter_pajkb/ui/shared/size_fit/int_extension.dart';
 import 'package:flutter_pajkb/ui/shared/theme/app_theme.dart';
-import 'package:flutter_pajkb/ui/widget/floor/floor_bound_card.dart';
+import 'package:flutter_pajkb/ui/widget/floor/common/floor_bound_card.dart';
 
 /*
 * 网格楼层

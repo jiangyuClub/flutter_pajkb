@@ -7,6 +7,7 @@ import 'package:flutter_pajkb/core/model/floor/floor_ensure_model.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_grid_model.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_hotsale_model.dart';
 import 'package:flutter_pajkb/core/model/floor/floor_perfect_model.dart';
+import 'package:flutter_pajkb/core/model/floor/floor_product_model.dart';
 
 /**
  * 首页json解析类
@@ -47,6 +48,11 @@ class JKBHomeJsonParse {
     });
     resList.add(hotSaleModel);
 
+    //6、全部产品
+    final productModel = await JKBHomeJsonParse.getFloorModel(url: "assets/jsons/home/product.json", serializeFun: (json) {
+      return JKBFloorProductModel.fromJson(json);
+    });
+    resList.add(productModel);
 
     print("testjiang==${resList.length}");
 

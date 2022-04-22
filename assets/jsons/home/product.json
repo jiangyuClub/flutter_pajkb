@@ -1,4 +1,8 @@
 {
+  "templateId": 16,
+  "headerResponse": {
+    "floorTitle": "全部产品"
+  },
   "dataResponse": {
     "productList": [
       {
@@ -26,6 +30,5 @@
         "backImgUrl": "https://stg.iobs.pingan.com.cn/download/bd-user-op-sf-stg/6kASOXb5"
       }
     ]
-  },
-  "templateId": 16
+  }
 }
